@@ -1,35 +1,52 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+title: EnvSense
+publishDate: 2024-04-15 00:00:00
+img: /assets/2.png
+img_alt: Tableau de bord EnvSense affichant les données environnementales en temps réel
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  EnvSense est une solution IoT complète pour la surveillance de l’environnement. Elle permet de collecter, transmettre, stocker et analyser en temps réel des données telles que la température, l’humidité de l’air et du sol.
+  Le système repose sur une architecture robuste composée d’un microcontrôleur ESP32, d’un backend Flask (Python) et d’un frontend React/TypeScript. Grâce à sa modularité, il s’adapte à de nombreux domaines : agriculture intelligente, éducation, gestion des ressources naturelles ou projets scientifiques.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - IoT
+  - Flask
+  - React
+  - Environnement
+  - Data Analysis
+  - ESP32
+  - Agriculture Intelligente
 ---
 
-## Level-two heading
+## EnvSense – Système intelligent de surveillance environnementale
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+**EnvSense** est une solution innovante et complète de surveillance environnementale basée sur les technologies de l’Internet des Objets (**IoT**).  
+Elle a été conçue pour permettre la **collecte**, la **transmission**, le **stockage**, **l’analyse** et la **visualisation en temps réel** de données essentielles telles que :
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+- Température ambiante  
+- Humidité de l’air  
+- Humidité du sol
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Le système s’appuie sur un réseau de **capteurs connectés à une carte ESP32**, qui transmettent les données vers un backend intelligent.
 
-### Level-three heading
+### Architecture technique
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+- **Matériel :** capteurs de précision + microcontrôleur ESP32  
+- **Backend :** développé avec **Flask (Python)**, il gère la réception, le traitement et le stockage des données, tout en fournissant des API RESTful.
+- **Frontend :** interface web moderne et réactive réalisée avec **React** et **TypeScript**, proposant des tableaux de bord interactifs.
 
-### Level-three heading
+### Cas d’utilisation
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+Grâce à sa **modularité** et sa **simplicité de déploiement**, EnvSense peut être utilisé dans de nombreux contextes :
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+- 🌾 Agriculture intelligente  
+- 🔬 Expérimentations scientifiques  
+- 🏫 Programmes éducatifs  
+- 🌍 Gestion des ressources naturelles
 
-#### Level-four heading
+### Objectif
 
-- We noted this
-- And also this other point
+Offrir une solution performante et accessible pour la surveillance locale de l’environnement, afin de **prendre des décisions éclairées** basées sur des **données fiables et en temps réel**.
+
+---
+
+
+

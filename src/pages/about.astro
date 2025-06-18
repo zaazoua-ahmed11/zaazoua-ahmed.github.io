@@ -1,58 +1,61 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="À propos | ZAAZOUA Ahmed" description="Découvrez le parcours et les compétences de ZAAZOUA Ahmed, développeur full stack et analyste de données.">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="À propos"
+				tagline="Bienvenue ! Je vous invite à découvrir mon parcours dans l’univers du développement et de la technologie."
 			>
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/assets/portrait.png"
+					alt="ZAAZOUA Ahmed en pleine activité"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Parcours</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Titulaire d’une licence en biologie médicale obtenue à l’<strong>ISPITS Fès en 2018</strong>, j’ai réorienté ma carrière avec passion vers le développement informatique. Depuis, j’ai accumulé plusieurs formations spécialisées :
 					</p>
+					<ul>
+						<li>Un <strong>Bac+2 en développement informatique</strong> (CMFP Oujda, 2022)</li>
+						<li>Une <strong>licence pro en informatique décisionnelle</strong> (ESTO, Oujda)</li>
+						<li>Une année de <strong>licence en informatique appliquée</strong></li>
+						<li>Une <strong>licence en développement des médias numériques</strong> (2025)</li>
+					</ul>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Mon profil polyvalent me permet aujourd’hui de réaliser des applications web, mobiles ou desktop, d’analyser des données, et d’intervenir sur des projets IoT, cybersécurité ou visualisation.
 					</p>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Compétences</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<ul>
+						<li>Langages : <strong>C#, .NET, ASP.NET, Java, Python, JavaScript, C, C++, HTML/CSS</strong></li>
+						<li>Base de données : <strong>SQL, MySQL</strong></li>
+						<li>Data Viz & BI : <strong>Power BI</strong></li>
+						<li>IoT : <strong>MQTT, ESP32, PlatformIO, Wokwi</strong></li>
+						<li>Cybersécurité : <strong>RSA, TLS/SSL, chiffrement, OpenSSL</strong></li>
+					</ul>
 				</div>
 			</section>
+
 			<section>
-				<h2 class="section-title">Skills</h2>
+				<h2 class="section-title">Centres d’intérêt</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<p>
+						En plus du développement, je m’intéresse vivement à la cybersécurité, aux solutions open source, à l’automatisation via l’IoT, et à la vulgarisation des sciences via des journaux numériques comme mon projet <strong>SIHATI</strong>.
+					</p>
 				</div>
 			</section>
 		</main>
@@ -61,6 +64,7 @@ import Hero from '../components/Hero.astro';
 	</div>
 </BaseLayout>
 
+
 <style>
 	.about {
 		display: flex;
@@ -68,11 +72,14 @@ import Hero from '../components/Hero.astro';
 		gap: 3.5rem;
 	}
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+img {
+	margin-top: 1.5rem;
+	border-radius: 1.5rem;
+	box-shadow: var(--shadow-md);
+	max-height: 700px; /* ✅ limite la hauteur */
+	width: auto;       /* ✅ garde les proportions */
+	object-fit: cover; /* ✅ si tu veux couper l’image au lieu de la déformer */
+}
 
 	section {
 		display: flex;
